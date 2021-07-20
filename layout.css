@@ -1,0 +1,109 @@
+header{
+ background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('cake.jpg');
+ background-size: cover;
+ height: 100vh;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+*{
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+}
+.row{
+ max-width: 1180px;
+ margin: 0 auto;
+}
+body{
+ font-size: 20px;
+ overflow-x: hidden;
+ color: beige;
+ font-family: 'Flamenco', cursive;
+}
+.clearfix::after{
+ visibility: hidden;
+ display: block;
+ height: 0px;
+ clear: both;
+}
+
+.logo{
+ height: 120px;
+ width: auto;
+ float: left;
+ margin-top: 20px;
+ transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.main-nav{
+ float: right;
+ margin-top: 60px;
+}
+.main-nav li{
+ display: inline-block;
+ list-style: none;
+ margin-left: 40px;
+
+}
+.main-nav li a{
+ color: #ffff;
+ text-decoration: none;
+ font-size: 90%;
+ font-weight: 100;
+}
+.main-nav li a:hover{
+ border-bottom: 2px solid rosybrown;
+}
+
+.main-content{
+ width: 1180px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+}
+h1{
+ color: beige;
+ font-size: 240%;
+ word-spacing: 5px;
+ letter-spacing: 3px;
+ margin-bottom: 20px;
+ text-transform: uppercase;
+ font-weight: lighter;
+}
+.btn{
+ display: inline-block;
+ padding: 10px 30px;
+ font-weight: lighter;
+ text-decoration: none;
+ text-transform: uppercase;
+ border-radius: 200px;
+ transition: background-color 0.2s,border 0.2s,color 0.2s;
+}
+.btn-full{
+ background-color: transparent;
+ color: rosybrown;
+ margin-right: 15px;
+ border: 1px solid rosybrown;
+
+}
+.btn-full:hover{
+ background-color: rosybrown;
+ transition: 0.3s;
+ text-decoration-color: slategray;
+
+
+
+}
+
+.change{
+ animation: changenice 1s infinite;
+}
+@keyframes changenice{
+ 0%{color: rgb(14, 3, 26);}
+ 25%{color: rgb(90, 18, 18);}
+  50%{color:rgb(46, 69, 138)}
+  100%{color:rgb(61, 32, 90)}
+
+ 
+}
